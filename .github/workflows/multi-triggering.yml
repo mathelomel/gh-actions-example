@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hello Build! Triggered by ${{ github.event_name }} event."
+      - run: echo "Hello Build! Triggered by ${{ github.event_name }} events."
