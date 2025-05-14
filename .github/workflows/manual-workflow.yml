@@ -1,0 +1,19 @@
+name: manual-workflow.yml
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "My name yoh"
+        required: true
+        type: string
+      specialGreetings:
+        description: "Additional text"
+        required: false
+        type: string
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello $ {{ inputs.name }}"
+          echo "Special greeting: ${{ inputs.specialGreetings }}"
