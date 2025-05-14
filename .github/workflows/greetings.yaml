@@ -1,0 +1,13 @@
+name: Greetings
+
+on:
+  issues:
+  pull_request:
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ashwin-ant/action-test-publish@newtag
+        with:
+          message: Hello my friend !
