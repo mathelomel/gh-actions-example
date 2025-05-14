@@ -16,3 +16,7 @@ jobs:
       - name: Build the project
         working-directory: java-app
         run: mvn clean install
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: 'java-app/target/demo-0.0.1-SNAPSHOT.jar'
