@@ -11,6 +11,6 @@ jobs:
       - uses: ashwin-ant/action-test-publish@newtag
         with:
           message: Hello my friend !
-      - uses: kyoncy/issue-comment-actions@v1
+      - uses: actions/first-interaction@v1.3.0
         with:
-          message: This is a comment on the issue
+          issue-message: This is a comment on the issue
