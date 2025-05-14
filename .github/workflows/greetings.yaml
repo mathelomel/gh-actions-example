@@ -13,4 +13,5 @@ jobs:
           message: Hello my friend !
       - uses: actions/first-interaction@v1.3.0
         with:
+          repo-token: {{ secrets.GITHUB_TOKEN }}
           issue-message: This is a comment on the issue
