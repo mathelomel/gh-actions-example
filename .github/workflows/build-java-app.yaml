@@ -13,3 +13,6 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "21"
+      - name: Build the project
+        working-directory: java-app
+        run: mvn clean install
