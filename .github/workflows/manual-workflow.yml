@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Hello $ {{ inputs.name }}"
+          echo "Hello ${{ inputs.name }}"
           echo "Special greeting: ${{ inputs.specialGreetings }}"
